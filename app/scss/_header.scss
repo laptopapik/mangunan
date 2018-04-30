@@ -1,0 +1,150 @@
+#main-header{
+	background-image: url(../images/11.jpg); 
+	height:100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center 50px;
+	background-attachment: fixed;
+	font-family: $font-title;
+
+	&:after {
+	  content: '';
+	  position: absolute;
+	  top: 0;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  display: block;
+	  background: linear-gradient(transparent, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8));
+	}
+	.navbar{
+	    transition: all 0.2s ease-in-out;
+	    height: auto;
+		padding: 2em 2em 1em;
+	}
+	.active {
+    background: #fff;
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    padding-top: 10px !important;
+}
+	.navbar-brand{
+		font-size: 30px;
+		letter-spacing: .5px;
+		max-width: 10%;
+		line-height: 25px;
+		white-space: unset;
+	}
+	.nav-item{
+		font-size: 18px;
+		letter-spacing: 1px;
+
+		a{
+		  position: relative;
+		}
+		a:after{
+		  position: absolute;
+		  bottom: 0;
+		  left: 0;
+		  right: 0;
+		  margin: auto;
+		  width: 0%;
+		  content: '.';
+		  color: transparent;
+		  background: rgba(0,0,0,.5);
+		  height: 1px;
+		  transition: all 0.3s;
+		}
+		a:hover:after {
+		  width: 100%;
+		}
+
+	}
+	.title{
+		position: absolute;
+	    top: 50%;
+	    color: white;
+	    z-index: 1;
+	    h1{	
+			font-size: 70px;
+			letter-spacing: 1px;
+			display: block;
+			color: #fff;
+		    letter-spacing: .05em;
+		    line-height: 50px;
+		    text-shadow: 
+		    5px 5px 1px rgba(0, 0, 0, 0.4);
+		    margin-bottom: 30px;
+		    text-align: center;
+		    span{
+		    	color: #96d570;
+		    }
+	    }
+	    h3{
+	    	font-family: roboto;
+	    	letter-spacing: -0.3px;
+	    	font-weight: 200;
+	    	font-size: 30px;
+	    	color: #d5d5d5;;
+	    	display: block;
+	    }
+	    .btn{
+	      margin-top: 20px;
+		  font-family: 'roboto', sans-serif;
+		  color: white;
+		  text-transform: uppercase;
+		  text-decoration: none;
+		  letter-spacing: 2px;
+		  line-height: 45px;
+		  border: 2px solid #fff;
+		  border-radius: 3px;
+		  box-shadow: 0 -3px rgba(0, 0, 0, 0.1) inset;
+		  padding: 0 40px;
+		  position: relative;
+		  transition: opacity 0.3s linear 0s;
+		}
+
+		.btn span{
+		  left: 0;
+		  position: relative;
+		  transition: all 0.2s ease-out 0s;
+		}
+
+		.btn svg{
+		  // width: 20px;
+		  position: absolute;
+		  right: 30px;
+		  top: 15px;
+		  margin-top: -9px;
+		  line-height: 18px;
+		  opacity: 0;
+		  transition: all 0.2s ease-out 0s;
+		}
+
+		.btn:hover span,
+		.btn:active span
+		{
+		  left: -25px;
+		}
+
+		.btn:hover svg,
+		.btn:active svg
+		{
+		  opacity: 1;
+		  right: 15px;
+		}
+
+	@media only screen and (max-width: 540px) {
+		h1{
+			font-size: 45px;
+		    line-height: 40px;
+		}
+		h3{
+			margin-top: -10px;
+			font-size: 18px;
+		}
+	}
+	}
+
+}

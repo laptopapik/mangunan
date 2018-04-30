@@ -1,0 +1,46 @@
+#tips{
+	padding: 80px 0 40px;
+	background-color: black;
+	background-size: cover;
+	color: #fff;
+	margin-top: 10px;
+
+	h3{
+		font-weight: bold;
+		font-size: 25px;
+		line-height: 29.9px;
+		letter-spacing: 3px;
+	}
+	.heading-border{
+		height: 1px;
+		margin: 0 auto 80px;
+		width: 86px;
+		background-color: #fff;
+	}
+	.media{
+		.food{
+			margin-left: 26px;
+		}
+		.media-body{
+			padding-bottom: 60px;
+			h5{
+				font-family: Arial;
+				font-weight: bold;
+				font-size: 22px;
+				line-height: 29.9px;
+				font-style: normal;
+				letter-spacing: 2px;
+				margin-bottom: 5px;
+				text-transform: uppercase;
+			}
+			p{
+				padding-right: 30px;
+			}
+		}
+		@media only screen and (max-width: 540px){
+			p{
+				font-size: 15px;
+			}
+		}
+	}
+}

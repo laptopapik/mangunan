@@ -1,0 +1,58 @@
+#galery{
+	margin-top: 10px;
+
+	.carousel {
+	  background: #EEE;
+	}
+
+	.carousel-cell {
+	  margin-right: 20px;
+	  overflow: hidden;
+	}
+
+	.carousel-cell img {
+	  display: block;
+	  height: 200px;
+	}
+	
+	
+
+	@media screen and ( min-width: 768px ) {
+	  .carousel-cell img {
+	    height: 400px;
+	  }
+	}
+}
+
+.flickity-page-dots {
+ 	 bottom: 10px;
+	}
+	.flickity-page-dots .dot {
+	  width: 12px;
+	  height: 12px;
+	  opacity: 1;
+	  background: transparent;
+	  border: 2px solid white;
+	}
+	/* fill-in selected dot */
+	.flickity-page-dots .dot.is-selected {
+	  background: white;
+	}
+
+	.flickity-prev-next-button {
+	  width: 60px;
+	  height: 60px;
+	  background: transparent;
+	  opacity: 0.6;
+	}
+	.flickity-prev-next-button:hover,
+	.flickity-prev-next-button:active {
+	  background: transparent;
+	  opacity: 1;
+	}
+	.flickity-prev-next-button .arrow {
+	  fill: white;
+	}
+	.flickity-prev-next-button.no-sv2g {
+	  color: white;
+	}

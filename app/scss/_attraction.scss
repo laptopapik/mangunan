@@ -1,0 +1,116 @@
+.heading-title{
+	font-weight: bold;
+	font-size: 25px;
+	line-height: 29.9px;
+	letter-spacing: 1.5px;
+}
+.heading-border{
+	height: 1px;
+	margin: 0 auto;
+	width: 86px;
+	background-color: #000;
+}
+#attraction{
+	max-width: 100%;
+
+	.card-custom {
+	  overflow: hidden;
+	  min-height: auto;
+	  border: 0;
+	  box-shadow: 0 0 25px rgba(10, 10, 10, 0.3);
+	  z-index: 1;
+
+	}
+
+	.card-custom-img img{
+	  height: 20px;
+	  min-height: 300px;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  background-position: center;
+	  border-color: inherit;
+	  z-index: 1;
+	}
+
+	.card-custom-avatar img {
+	  border-radius: 50%;
+	  box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
+	  position: absolute;
+	  top: 100px;
+	  left: 1.25rem;
+	  width: 100px;
+	  height: 100px;
+	}
+
+	.card-body{
+		top: -15px;
+		position: relative;
+		z-index: 99;
+		padding: 0.5rem 2rem 2rem;
+		display: none;
+
+
+
+		&:before{
+		  position: absolute;
+		  content: '';
+		  top: -20px;
+		  left: 0;
+		  width: 0;
+		  height: 0;
+		  border-style: solid;
+		  border-top-width: 40px;
+		  border-right-width: 0;
+		  border-bottom-width: 0;
+		  border-left-width: 545px;
+		  border-left-width: calc(575px - 5vw);
+		  border-top-color: transparent;
+		  border-right-color: transparent;
+		  border-bottom-color: transparent;
+		  border-left-color: inherit;
+		  color: #fff;
+		  z-index: -1;
+		}
+
+		.card-title{
+			font-family: coolvetica;
+			letter-spacing: 1px;
+			color: #78ab59;
+			position: relative;
+		}
+		.card-text{
+			line-height: 20px;
+			@media only screen and (max-width: 540px){
+					font-size: 15px;
+					line-height: 17px;
+			}
+		}
+	}
+.flickity-slider{
+	display: flex !important;
+	align-items: center !important;
+}
+.flickity-page-dots {
+    bottom: 0px;
+}
+.flickity-page-dots .dot.is-selected {
+	  background: black;
+	}
+.flickity-page-dots .dot {
+	  width: 12px;
+	  height: 12px;
+	  opacity: 1;
+	  background: grey;
+	  border: 2px solid transparent;
+	}
+.col-md-4{
+}
+.carousel-cell.is-selected {
+	// top: -21% ;
+	.card-body{
+  	animation: cubic-bezier(.47,0,.74,.71);
+  	display: initial;
+  }
+}
+
+}

@@ -1,0 +1,82 @@
+#attraction {
+  max-width: 100%; }
+  #attraction .attraction-title {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 29.9px;
+    letter-spacing: 3px;
+    margin-bottom: 20px; }
+  #attraction .card-custom {
+    overflow: hidden;
+    min-height: auto;
+    border: 0;
+    box-shadow: 0 0 25px rgba(10, 10, 10, 0.3);
+    z-index: 1; }
+  #attraction .card-custom-img img {
+    height: 20px;
+    min-height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-color: inherit;
+    z-index: 1; }
+  #attraction .card-custom-avatar img {
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
+    position: absolute;
+    top: 100px;
+    left: 1.25rem;
+    width: 100px;
+    height: 100px; }
+  #attraction .card-body {
+    top: -15px;
+    position: relative;
+    z-index: 99;
+    padding: 0.5rem 2rem 2rem;
+    display: none; }
+    #attraction .card-body:before {
+      position: absolute;
+      content: '';
+      top: -20px;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-top-width: 40px;
+      border-right-width: 0;
+      border-bottom-width: 0;
+      border-left-width: 545px;
+      border-left-width: calc(575px - 5vw);
+      border-top-color: transparent;
+      border-right-color: transparent;
+      border-bottom-color: transparent;
+      border-left-color: inherit;
+      color: #fff;
+      z-index: -1; }
+    #attraction .card-body .card-title {
+      font-family: coolvetica;
+      letter-spacing: 1px;
+      color: #78ab59;
+      position: relative; }
+    #attraction .card-body .card-text {
+      line-height: 20px; }
+      @media only screen and (max-width: 540px) {
+        #attraction .card-body .card-text {
+          font-size: 15px;
+          line-height: 17px; } }
+  #attraction .flickity-slider {
+    display: flex !important;
+    align-items: center !important; }
+  #attraction .flickity-page-dots {
+    bottom: 0px; }
+  #attraction .flickity-page-dots .dot.is-selected {
+    background: black; }
+  #attraction .flickity-page-dots .dot {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    background: grey;
+    border: 2px solid transparent; }
+  #attraction .carousel-cell.is-selected .card-body {
+    animation: cubic-bezier(0.47, 0, 0.74, 0.71);
+    display: initial; }

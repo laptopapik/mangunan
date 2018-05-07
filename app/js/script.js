@@ -18,28 +18,65 @@ var $carousel = $('#attraction .carousel').flickity({
 
 
 
-var $carousel = $('#galery .carousel').flickity({
+var carousel = document.querySelector('#galery .carousel');
+var flkty = new Flickity( carousel, {
   imagesLoaded: true,
   percentPosition: false,
   wrapAround: true,
-  initialIndex: 4,
-  autoPlay: 3000 ,
-
+  lazyLoad: true,
+  
 });
-var $imgs = $carousel.find('.carousel-cell img');
+
+var imgs = carousel.querySelectorAll('.carousel-cell img');
+// get transform property
 var docStyle = document.documentElement.style;
 var transformProp = typeof docStyle.transform == 'string' ?
   'transform' : 'WebkitTransform';
-var flkty = $carousel.data('flickity');
 
-$carousel.on( 'scroll.flickity', function() {
+flkty.on( 'scroll', function() {
   flkty.slides.forEach( function( slide, i ) {
-    var img = $imgs[i];
-    var x = ( slide.target + flkty.x ) * -1/3;
-    img.style[ transformProp ] = 'translateX(' + x  + 'px)';
+    var img = imgs[i],
+      x   = 0;
+
+      if( 0 === i ) {
+        x = Math.abs( flkty.x ) > flkty.slidesWidth ? ( flkty.slidesWidth + flkty.x + flkty.slides[flkty.slides.length - 1 ].outerWidth + slide.target ) : ( slide.target + flkty.x );
+      } else if( i === flkty.slides.length - 1 ) {
+        x = Math.abs( flkty.x ) + flkty.slides[i].outerWidth < flkty.slidesWidth ? ( slide.target - flkty.slidesWidth + flkty.x - flkty.slides[i].outerWidth ) : ( slide.target + flkty.x );
+      } else {
+        x = slide.target + flkty.x;
+      }
+    img.style[ transformProp ] = 'translateX(' + x * ( -1 / 3 ) + 'px)';
   });
 });
 
-AOS.init();
+AOS.init({
+  once: true
 });
 
+  $("#main-header .nav-item a").on('click', function(event) {
+
+    if (this.hash !== "") {
+      event.preventDefault();
+
+      var hash = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        window.location.hash = hash;
+      });
+    }
+  });
+
+  $("#row-article .col-md-6").slice(0, 2).show();
+  $("#loadMore").on('click', function (e) {
+    $(".col-md-6:hidden").slice(0, 2).slideDown();
+     if ($(".col-md-6:hidden").length == 0) {
+            $("#loadMore").fadeOut('slow');
+        }
+        $('html,body').animate({
+            scrollTop: $(this).offset().top -400
+        }, 1500);
+  });
+});

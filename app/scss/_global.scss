@@ -1,14 +1,38 @@
 @font-face {
-    font-family: 'coolveticar';
-    src: url('fonts/coolvetica/coolvetica_rg-webfont.woff2') format('woff2'),
-         url('fonts/coolvetica/coolvetica_rg-webfont.woff') format('woff');
+    font-family: 'coolvetica';
+    src: url('../fonts/coolvetica/coolvetica_rg-webfont.woff2') format('woff2'),
+         url('../fonts/coolvetica/coolvetica_rg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+};
+
+@font-face {
+    font-family: 'abril_fatface';
+    src: url('../fonts/abrilfatface/abrilfatface-regular-webfont.woff2') format('woff2'),
+         url('../fonts/abrilfatface/abrilfatface-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:400');
+@font-face {
+    font-family: 'roboto';
+    src: url('../fonts/roboto/roboto-regular-webfont.woff2') format('woff2'),
+         url('../fonts/roboto/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
+}
+
+@font-face {
+    font-family: 'lobster';
+    src: url('../fonts/lobster/lobster-regular-webfont.woff2') format('woff2'),
+         url('../fonts/lobster/lobster-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 $font-title: coolvetica,ubuntu;
 $font-text: roboto,sans-serif;

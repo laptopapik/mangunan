@@ -1,40 +1,66 @@
 #tips{
-	padding: 80px 0 40px;
-	background-color: black;
-	background-size: cover;
-	color: #fff;
-	margin-top: 10px;
+	overflow: hidden;
 
-	h3{
-		font-weight: bold;
-		font-size: 25px;
-		line-height: 29.9px;
-		letter-spacing: 3px;
+	.heading-title h3{
+		padding-bottom: 3px;
+		border-bottom: 2px solid #fff;
 	}
-	.heading-border{
-		height: 1px;
-		margin: 0 auto 80px;
-		width: 86px;
-		background-color: #fff;
+	.tips-content{
+	background-color: #252525;
+	color: #fff;
+	
 	}
+	.info-content{
+		background-color: #9dd454;
+		text-align: right;
+	
+		.heading-title h3{
+		border-bottom: 2px solid #252525;
+		}
+		h3{
+		}
+		h4{
+			font-family: 'coolvetica',sans-serif;
+		}
+		p{
+			font-family: roboto,sans-serif;
+		}
+		a{
+			margin-top: 10px;
+			border-radius: 0;
+			padding: 10px 15px;
+			border-radius: 1.3rem;
+			letter-spacing: 0.3px;
+			transition: .3s background ease-in;
+			color: #fff;
+			background-color: #252525;
+		}
+	}
+.row{
+	// padding: 0 90px;
+}
 	.media{
+		margin-bottom: 10px;
 		.food{
-			margin-left: 26px;
+			margin-left: 22px;
+		}
+		img{
+			height: 70px;
 		}
 		.media-body{
-			padding-bottom: 60px;
 			h5{
-				font-family: Arial;
-				font-weight: bold;
+				font-family: coolvetica;
 				font-size: 22px;
 				line-height: 29.9px;
 				font-style: normal;
 				letter-spacing: 2px;
 				margin-bottom: 5px;
-				text-transform: uppercase;
 			}
 			p{
 				padding-right: 30px;
+				font-family: roboto;
+				line-height: 20px;
+				font-size: 15px;
 			}
 		}
 		@media only screen and (max-width: 540px){

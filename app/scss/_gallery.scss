@@ -1,7 +1,12 @@
 #galery{
-	margin-top: 10px;
+	padding-top: 300px;
+	margin-top: -300px;
+	h2{
+		display: none;
+	}
 
 	.carousel {
+		padding-top: 10px;
 	  background: #EEE;
 	}
 

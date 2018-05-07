@@ -1,17 +1,20 @@
-.heading-title{
-	font-weight: bold;
-	font-size: 25px;
-	line-height: 29.9px;
+.heading-title h3{
 	letter-spacing: 1.5px;
+	font-family: 'abril_fatface',sans-serif;
+	font-size: 35px;
+	border-bottom: 2px solid #bdbdbd;
+	display: inline;
+	padding: 0 8px;
 }
-.heading-border{
-	height: 1px;
-	margin: 0 auto;
-	width: 86px;
-	background-color: #000;
-}
+// .heading-border{
+// 	height: 1px;
+// 	margin: 0 auto;
+// 	width: 86px;
+// 	background-color: #000;
+// }
 #attraction{
 	max-width: 100%;
+	padding: 40px 0 60px;
 
 	.card-custom {
 	  overflow: hidden;
@@ -30,16 +33,6 @@
 	  background-position: center;
 	  border-color: inherit;
 	  z-index: 1;
-	}
-
-	.card-custom-avatar img {
-	  border-radius: 50%;
-	  box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
-	  position: absolute;
-	  top: 100px;
-	  left: 1.25rem;
-	  width: 100px;
-	  height: 100px;
 	}
 
 	.card-body{
@@ -86,6 +79,9 @@
 			}
 		}
 	}
+.flickity-viewport{
+	height: 600px !important;
+}
 .flickity-slider{
 	display: flex !important;
 	align-items: center !important;
@@ -106,11 +102,19 @@
 .col-md-4{
 }
 .carousel-cell.is-selected {
-	// top: -21% ;
 	.card-body{
-  	animation: cubic-bezier(.47,0,.74,.71);
   	display: initial;
   }
+}
+
+@media only screen and(max-width:960px){
+	.col-lg-4{
+		max-width: 500px;
+		min-width: 300px;
+		img{
+			width: 100%;
+		}
+	}
 }
 
 }
